@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "about": "About Us",
+    "references": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Industrial Assembly",
+    "services": "Steel Structures • Technology • Industrial Control",
+    "btn_contact": "Inquiry",
+    "btn_references": "Our Projects",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "subtitle": "Who we are",
+    "title": "Honest and Precise Assembly",
+    "p1": "We are JML mont s.r.o., a company founded by two brothers with a shared vision. We lead a team of experienced fitters specializing in steel structures, fire extinguishing systems, and technological units.",
+    "p2": "Our calling card is reliability and a responsible approach. We complete every project so that it works 100%, ensuring our customers can always rely on us.",
+    "p3": "We are based in Třebíč, Czech Republic, but operate throughout Europe. We welcome both new collaborations and long-term partnerships.",
+    "stat1_val": "30+",
+    "stat1_title": "Projects",
+    "stat1_desc": "Successfully completed projects with maximum precision.",
+    "stat2_val": "EU",
+    "stat2_title": "Coverage",
+    "stat2_desc": "We assemble all over Europe, from our hometown across borders."
+  },
+  "references": {
+    "ref1_title": "Welding Demonstration",
+    "ref1_desc": "Precise welds on steel structures with maximum accuracy.",
+    "ref2_title": "Structure Assembly",
+    "ref2_desc": "We provide complete assembly of halls and racking systems throughout Europe.",
+    "ref3_title": "Work at Height",
+    "ref3_desc": "Assembly work on steel structures using mountaineering techniques."
+  },
+  "career": {
+    "subtitle": "Career at JML mont",
+    "title": "We are looking for you",
+    "desc": "We are expanding our team! We are looking for reliable partners for assembly work across Europe. We offer fair treatment, stable work, and a great team.",
+    "list_1": "Experienced fitters and handy beginners",
+    "list_2": "Work across the EU",
+    "list_3": "Fair financial compensation",
+    "btn": "I want to join the team"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "desc": "If you are looking for an assembly company that keeps its word and works hard, get in touch – we'd love to hear from you.",
+    "phone_title": "Call us",
+    "phone": "+420 123 456 789",
+    "email_title": "Email us",
+    "email": "info@jmlmont.eu",
+    "form_name": "Your Name",
+    "form_email": "Your Email",
+    "form_message": "Message",
+    "form_message_placeholder": "Hello, I am interested in...",
+    "form_submit": "Send Message",
+    "form_sending": "Sending...",
+    "msg_success": "Thank you! Your message has been sent successfully.",
+    "msg_error": "Error: Failed to send the message. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "designed": "Designed & Developed by"
+  }
+}

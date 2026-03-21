@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "references": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Industriemontage",
+    "services": "Stahlbau • Technologie • Industriesteuerung",
+    "btn_contact": "Anfrage",
+    "btn_references": "Unsere Projekte",
+    "scroll": "Nach unten scrollen"
+  },
+  "about": {
+    "subtitle": "Wer wir sind",
+    "title": "Ehrliche und präzise Montage",
+    "p1": "Wir sind JML mont s.r.o., ein Unternehmen, das von zwei Brüdern mit einem gemeinsamen Ziel gegründet wurde. Wir leiten ein Team erfahrener Monteure, die auf Stahlbau, Feuerlöschsysteme und technologische Anlagen spezialisiert sind.",
+    "p2": "Unser Markenzeichen ist Zuverlässigkeit und eine verantwortungsvolle Arbeitsweise. Wir schließen jeden Auftrag so ab, dass er zu 100 % funktioniert und sich der Kunde jederzeit auf uns verlassen kann.",
+    "p3": "Wir stammen aus Třebíč (Trebitsch), sind aber europaweit tätig. Wir freuen uns sowohl über neue Kooperationen als auch über langfristige Partnerschaften.",
+    "stat1_val": "30+",
+    "stat1_title": "Projekte",
+    "stat1_desc": "Erfolgreich abgeschlossene Projekte mit höchster Präzision.",
+    "stat2_val": "EU",
+    "stat2_title": "Reichweite",
+    "stat2_desc": "Wir montieren in ganz Europa, von unserer Heimatstadt bis über die Grenzen hinaus."
+  },
+  "references": {
+    "ref1_title": "Schweißvorführung",
+    "ref1_desc": "Präzise Schweißnähte an Stahlkonstruktionen mit höchster Genauigkeit.",
+    "ref2_title": "Montage von Strukturen",
+    "ref2_desc": "Wir bieten die komplette Montage von Hallen und Regalsystemen in ganz Europa.",
+    "ref3_title": "Höhenarbeiten",
+    "ref3_desc": "Montagearbeiten an Stahlkonstruktionen unter Einsatz von Klettertechniken."
+  },
+  "career": {
+    "subtitle": "Karriere bei JML mont",
+    "title": "Wir suchen genau dich",
+    "desc": "Wir erweitern unser Team! Wir suchen zuverlässige Partner für Montagearbeiten in ganz Europa. Wir bieten fairen Umgang, stabile Arbeit und ein tolles Team.",
+    "list_1": "Erfahrene Monteure und geschickte Anfänger",
+    "list_2": "Arbeit in der gesamten EU",
+    "list_3": "Faire finanzielle Vergütung",
+    "btn": "Ich möchte ins Team"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "desc": "Wenn Sie ein Montageunternehmen suchen, das sein Wort hält und hart arbeitet, melden Sie sich – wir freuen uns auf Sie.",
+    "phone_title": "Rufen Sie uns an",
+    "phone": "+420 123 456 789",
+    "email_title": "Schreiben Sie uns",
+    "email": "info@jmlmont.eu",
+    "form_name": "Ihr Name",
+    "form_email": "Ihre E-Mail",
+    "form_message": "Nachricht",
+    "form_message_placeholder": "Guten Tag, ich interessiere mich für...",
+    "form_submit": "Nachricht senden",
+    "form_sending": "Wird gesendet...",
+    "msg_success": "Danke! Ihre Nachricht wurde erfolgreich gesendet.",
+    "msg_error": "Fehler: Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "designed": "Designed & Developed by"
+  }
+}

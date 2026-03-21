@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "about": "O nás",
+    "references": "Reference",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Průmyslové montáže",
+    "services": "Ocelové konstrukce • Technologie • Průmyslové řízení",
+    "btn_contact": "Nezávazná poptávka",
+    "btn_references": "Naše reference",
+    "scroll": "Scrolluj dolů"
+  },
+  "about": {
+    "subtitle": "Kdo jsme",
+    "title": "Poctivé a precizní montáže",
+    "p1": "Jsme JML mont s.r.o., firma, kterou založili dva bratři se společným cílem. Vedeme tým zkušených montérů, kteří se specializují na ocelové konstrukce, hasicí systémy a technologické celky.",
+    "p2": "Naší vizitkou je spolehlivost a zodpovědný přístup. Každou zakázku dokončujeme tak, aby fungovala na 100 % a zákazník se na nás mohl kdykoli spolehnout.",
+    "p3": "Pocházíme z Třebíče, ale působíme po celé Evropě. Vítáme jak nové spolupráce, tak dlouhodobá partnerství.",
+    "stat1_val": "30+",
+    "stat1_title": "Projektů",
+    "stat1_desc": "Úspěšně dokončených zakázek s maximální přesností.",
+    "stat2_val": "EU",
+    "stat2_title": "Působnost",
+    "stat2_desc": "Montujeme po celé Evropě, od Třebíče až za hranice."
+  }
+  ,
+  "references": {
+    "ref1_title": "Ukázka svařování",
+    "ref1_desc": "Precizní svary na ocelových konstrukcích s maximální přesností.",
+    "ref2_title": "Montáž konstrukcí",
+    "ref2_desc": "Zajišťujeme kompletní montáže hal a regálových systémů po celé Evropě.",
+    "ref3_title": "Výškové práce",
+    "ref3_desc": "Montážní práce na ocelových konstrukcích s využitím horolezecké techniky."
+  },
+  "career": {
+    "subtitle": "Kariéra v JML mont",
+    "title": "Hledáme právě tebe",
+    "desc": "Rozšiřujeme tým! Hledáme spolehlivé parťáky na montáže po celé Evropě. Nabízíme férové jednání, stabilní práci a skvělou partu.",
+    "list_1": "Zkušené montéry i šikovné nováčky",
+    "list_2": "Práce po celé EU",
+    "list_3": "Férové finanční ohodnocení",
+    "btn": "Chci k vám do týmu"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "desc": "Pokud hledáte montážní firmu, která drží slovo a maká naplno, ozvěte se – rádi se s vámi spojíme.",
+    "phone_title": "Zavolejte nám",
+    "phone": "+420 123 456 789",
+    "email_title": "Napište nám",
+    "email": "info@jmlmont.eu",
+    "form_name": "Vaše jméno",
+    "form_email": "Váš e-mail",
+    "form_message": "Zpráva",
+    "form_message_placeholder": "Dobrý den, měl bych zájem o...",
+    "form_submit": "Odeslat zprávu",
+    "form_sending": "Odesílám...",
+    "msg_success": "Děkujeme! Vaše zpráva byla úspěšně odeslána.",
+    "msg_error": "Chyba: Zprávu se nepodařilo odeslat. Zkuste to prosím znovu."
+  },
+  "footer": {
+    "rights": "Všechna práva vyhrazena.",
+    "designed": "Designed & Developed by"
+  }
+}

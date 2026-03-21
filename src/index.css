@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-800 antialiased; /* antialiased dělá písmo ostřejší */
+  overflow-x: hidden; /* Zabrání nechtěnému posunu do strany */
+}
+
+/* Výběr textu bude zlatý - malý moderní detail */
+::selection {
+  @apply bg-gold text-white;
+}
+@keyframes scrolldown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
