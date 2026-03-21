@@ -1,11 +1,15 @@
 <?php
-// 1) HONEYPOT
+// Přidáme hlavičku, aby frontend věděl, že mu posíláme JSON
+header('Content-Type: application/json; charset=utf-8');
+
+// 1) HONEYPOT (Proti spamu)
 if (!empty($_POST["hp-check"])) {
-    header("Location: index.html?status=spam#kontakt");
+    http_response_code(400); // 400 Bad Request
+    echo json_encode(["status" => "spam", "message" => "Spam detekován."]);
     exit;
 }
 
-// 2) RATE LIMIT
+// 2) RATE LIMIT (Ochrana proti zahlcení)
 $ip = $_SERVER['REMOTE_ADDR'];
 $limitDir = __DIR__ . '/ip_limit';
 $limitFile = $limitDir . '/' . md5($ip) . '.txt';
@@ -26,7 +30,8 @@ if (file_exists($limitFile)) {
     });
 
     if (count($data) >= $maxRequests) {
-        header("Location: index.html?status=limit#kontakt");
+        http_response_code(429); // 429 Too Many Requests
+        echo json_encode(["status" => "limit", "message" => "Příliš mnoho pokusů. Prosím chvíli počkejte."]);
         exit;
     }
 }
@@ -40,13 +45,14 @@ $email   = filter_var($_POST["email"] ?? "", FILTER_VALIDATE_EMAIL);
 $message = htmlspecialchars(trim($_POST["message"] ?? ""), ENT_QUOTES, "UTF-8");
 
 if (!$email || empty($name) || empty($message)) {
-    header("Location: index.html?status=invalid#kontakt");
+    http_response_code(400); // 400 Bad Request
+    echo json_encode(["status" => "invalid", "message" => "Prosím vyplňte správně všechna pole."]);
     exit;
 }
 
 // 4) ODESLÁNÍ EMAILU
 $to      = "info@jmlmont.eu";
-$subject = "Nova zprava z webu JML mont"; // Bez diakritiky je jistější pro mail servery
+$subject = "Nova zprava z webu JML mont"; 
 
 $body = "Jméno: $name\n";
 $body .= "E-mail: $email\n\n";
@@ -58,8 +64,10 @@ $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 if (mail($to, $subject, $body, $headers)) {
-    header("Location: index.html?status=success#kontakt");
+    http_response_code(200); // 200 OK
+    echo json_encode(["status" => "success"]);
 } else {
-    header("Location: index.html?status=error#kontakt");
+    http_response_code(500); // 500 Internal Server Error
+    echo json_encode(["status" => "error", "message" => "Chyba na serveru při odesílání e-mailu."]);
 }
 exit;
