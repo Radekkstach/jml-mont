@@ -60,5 +60,18 @@
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
     "designed": "Designed & Developed by"
+  },
+  "seo": {
+    "title": "JML mont | Industriemontage und Stahlbau",
+    "description": "Zuverlässige Industriemontage, Stahlbau und technologische Anlagen europaweit. JML mont s.r.o. - Präzision und Qualität."
+  },
+  "certs": {
+    "bar_title": "Zertifizierte Qualität",
+    "iso9001_title": "ISO 9001:2015",
+    "iso9001_desc": "Qualitätsmanagement",
+    "iso14001_title": "ISO 14001:2015",
+    "iso14001_desc": "Umweltmanagement",
+    "en1090_title": "EN 1090-2",
+    "en1090_desc": "Stahlbauwerke EXC2"
   }
 }

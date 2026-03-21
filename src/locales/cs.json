@@ -61,5 +61,18 @@
   "footer": {
     "rights": "Všechna práva vyhrazena.",
     "designed": "Designed & Developed by"
+  },
+  "seo": {
+    "title": "JML mont | Průmyslové montáže a ocelové konstrukce",
+    "description": "Spolehlivé průmyslové montáže, ocelové konstrukce a technologické celky po celé Evropě. JML mont s.r.o. - preciznost a kvalita."
+  },
+  "certs": {
+    "bar_title": "Certifikovaná kvalita",
+    "iso9001_title": "ISO 9001:2015",
+    "iso9001_desc": "Management kvality",
+    "iso14001_title": "ISO 14001:2015",
+    "iso14001_desc": "Ekologický management",
+    "en1090_title": "EN 1090-2",
+    "en1090_desc": "Ocelové konstrukce EXC2"
   }
 }

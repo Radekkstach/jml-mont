@@ -60,5 +60,18 @@
   "footer": {
     "rights": "All rights reserved.",
     "designed": "Designed & Developed by"
+  },
+  "seo": {
+    "title": "JML mont | Industrial Assembly and Steel Structures",
+    "description": "Reliable industrial assembly, steel structures, and technological units across Europe. JML mont s.r.o. - precision and quality."
+  },
+  "certs": {
+    "bar_title": "Certified Quality",
+    "iso9001_title": "ISO 9001:2015",
+    "iso9001_desc": "Quality Management",
+    "iso14001_title": "ISO 14001:2015",
+    "iso14001_desc": "Environmental Management",
+    "en1090_title": "EN 1090-2",
+    "en1090_desc": "Steel Structures EXC2"
   }
 }

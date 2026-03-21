@@ -8,13 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 const slideData = [
   {
     id: 1,
-    image: "/svarec1.jpeg",
+    image: "/svarec1.jpg",
     titleKey: "references.ref1_title",
     descKey: "references.ref1_desc",
   },
   {
     id: 2,
-    image: "/regal33.jpeg",
+    image: "/regal33.jpg",
     titleKey: "references.ref2_title",
     descKey: "references.ref2_desc",
   },
