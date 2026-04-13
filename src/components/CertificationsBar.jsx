@@ -5,36 +5,39 @@ import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const CertificationsBar = () => {
-  const barRef = useRef(null);
+const MinimalCertificationsBar = () => {
+  const containerRef = useRef(null);
   const { t } = useTranslation();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Jednoduchá a rychlá animace (žádný fluff)
-      gsap.from(barRef.current, {
-        opacity: 0,
-        y: 20,
-        duration: 0.6,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: barRef.current,
-          start: "top 95%",
+      gsap.fromTo(
+        ".cert-item",
+        { opacity: 0, y: 15 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 95%",
+            toggleActions: "play none none none",
+          },
         },
-      });
-    }, barRef);
+      );
+    }, containerRef);
     return () => ctx.revert();
   }, []);
 
-  // Definice certifikátů s robustními solidními ikonami v yellow-500
   const certs = [
     {
-      titleKey: "certs.iso9001_title",
-      descKey: "certs.iso9001_desc",
-      // Robustní solidní štít a fajfka (Kvalita)
+      titleKey: "certs.quality_title",
+      codeKey: "certs.quality_code",
       icon: (
         <svg
-          className="w-9 h-9 text-yellow-500"
+          className="w-7 h-7 text-yellow-500 shrink-0"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
@@ -49,12 +52,11 @@ const CertificationsBar = () => {
       ),
     },
     {
-      titleKey: "certs.iso14001_title",
-      descKey: "certs.iso14001_desc",
-      // Robustní solidní list a štít (Ekologie)
+      titleKey: "certs.eco_title",
+      codeKey: "certs.eco_code",
       icon: (
         <svg
-          className="w-9 h-9 text-yellow-500"
+          className="w-7 h-7 text-yellow-500 shrink-0"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
@@ -68,12 +70,24 @@ const CertificationsBar = () => {
       ),
     },
     {
-      titleKey: "certs.en1090_title",
-      descKey: "certs.en1090_desc",
-      // Robustní solidní profil ocelového nosníku (Konstrukce)
+      titleKey: "certs.safety_title",
+      codeKey: "certs.safety_code",
       icon: (
         <svg
-          className="w-9 h-9 text-yellow-500"
+          className="w-7 h-7 text-yellow-500 shrink-0"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4 11h-3v3c0 .55-.45 1-1 1s-1-.45-1-1v-3H8c-.55 0-1-.45-1-1s.45-1 1-1h3V8c0-.55.45-1 1-1s1 .45 1 1v3h3c.55 0 1 .45 1 1s-.45 1-1 1z" />
+        </svg>
+      ),
+    },
+    {
+      titleKey: "certs.steel_title",
+      codeKey: "certs.steel_code",
+      icon: (
+        <svg
+          className="w-7 h-7 text-yellow-500 shrink-0"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
@@ -87,48 +101,33 @@ const CertificationsBar = () => {
 
   return (
     <div
-      ref={barRef}
-      className="bg-[#0f0f0f] border-t border-b border-white/5 font-sans relative z-20"
+      ref={containerRef}
+      className="bg-[#0a0a0a] border-y border-white/5 py-6 font-sans"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 md:py-5">
-        {/* Symetrický grid bez postranních nadpisů */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-x-12 justify-items-center">
-          {certs.map((cert, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-5 w-full max-w-sm md:max-w-none md:justify-center"
-            >
-              {/* Robustní ikonka v pevném kroužku s těžším ohraničením */}
-              <div className="w-16 h-16 rounded-full bg-black border-2 border-white/10 flex items-center justify-center shrink-0">
-                {cert.icon}
-              </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 justify-between">
+        {certs.map((cert, index) => (
+          <div
+            key={index}
+            className="cert-item flex items-center gap-3 md:justify-center"
+          >
+            {cert.icon}
 
-              {/* Čistá, silná typografie */}
-              <div>
-                <p className="text-xl font-black text-white tracking-tight leading-tight">
-                  {t(cert.titleKey)}
-                </p>
-                <p className="text-xs text-gray-400 font-semibold uppercase tracking-widest mt-0.5">
-                  {t(cert.descKey)}
-                </p>
-              </div>
-
-              {/* Jemný svislý rozdělovač (skrytý na mobilu) */}
-              {index < certs.length - 1 && (
-                <div
-                  className="hidden md:block h-12 w-[1px] bg-white/5 absolute right-0 top-1/2 -translate-y-1/2"
-                  style={{ marginRight: "-24px" }}
-                ></div>
-              )}
-              {index < certs.length - 1 && (
-                <div className="hidden md:block h-12 border-l border-white/5 absolute right-1/3 top-1/2 -translate-y-1/2"></div>
-              )}
+            {/* PŘIDÁNO: min-w-0 aby flex box respektoval šířku rodiče */}
+            <div className="flex flex-col min-w-0">
+              {/* PŘIDÁNO: break-words a hyphens-auto pro zalomení dlouhých slov */}
+              <span className="text-sm md:text-base font-bold text-white leading-tight break-words hyphens-auto">
+                {t(cert.titleKey)}
+              </span>
+              {/* PŘIDÁNO: truncate, kdyby náhodou i kód certifikátu byl moc dlouhý */}
+              <span className="text-[10px] md:text-xs font-mono text-gray-500 mt-0.5 truncate">
+                {t(cert.codeKey)}
+              </span>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default CertificationsBar;
+export default MinimalCertificationsBar;

@@ -67,7 +67,8 @@ const Hero = () => {
       {/* HLAVNÍ OBSAH */}
       <div className="relative z-10 h-full max-w-7xl mx-auto flex flex-col items-center justify-center text-center px-6 text-white pt-10">
         {/* Hlavní nadpis */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 drop-shadow-2xl leading-tight tracking-tight">
+        {/* Hlavní nadpis */}
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 drop-shadow-2xl leading-tight tracking-tight break-words hyphens-auto w-full px-2">
           <span className="hero-text-element block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200 pb-2">
             {t("hero.subtitle", "Průmyslové montáže")}
           </span>
@@ -104,8 +105,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* MODERNÍ SCROLL INDIKÁTOR */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity">
+      {/* MODERNÍ SCROLL INDIKÁTOR - Upraveno pro schování na malých obrazovkách */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center opacity-70 hover:opacity-100 transition-opacity hidden [@media(min-height:650px)]:flex">
         <span className="text-[10px] text-gray-400 uppercase tracking-widest mb-3 hero-text-element">
           {t("hero.scroll", "Scrolluj dolů")}
         </span>

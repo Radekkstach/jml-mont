@@ -149,7 +149,7 @@ const Career = () => {
             <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl bg-gray-100">
               {/* Zde můžeš použít libovolnou fotku z tvé složky public, dal jsem jako placeholder svarec1.jpeg */}
               <img
-                src="/svarec1.jpg"
+                src="/together.jpg"
                 alt="Práce v JML mont"
                 className="w-full h-[400px] md:h-[500px] object-cover"
               />

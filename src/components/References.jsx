@@ -106,15 +106,18 @@ const References = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
 
           {/* Textový box */}
-          <div className="absolute bottom-16 left-6 md:left-16 max-w-2xl p-6 md:p-8">
+          {/* Textový box - Přidáno right-6 pro mobilní hranici */}
+          <div className="absolute bottom-16 left-6 right-6 md:right-auto md:left-16 max-w-2xl p-4 md:p-8 bg-black/20 md:bg-transparent rounded-lg backdrop-blur-sm md:backdrop-blur-none">
             <div
               className={`transition-all duration-700 delay-200 transform ${index === current ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 tracking-tight">
+              {/* Zmenšeno z text-4xl na text-3xl pro mobily a přidán break-words */}
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 tracking-tight break-words hyphens-auto">
                 {t(slide.titleKey)}
               </h3>
               <div className="w-16 h-1 bg-yellow-500 mb-6 rounded-full"></div>
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light">
+              {/* Jemně zmenšen i popis pro lepší čitelnost na úzkém displeji */}
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-light">
                 {t(slide.descKey)}
               </p>
             </div>

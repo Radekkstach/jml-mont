@@ -67,12 +67,13 @@
     "description": "Spolehlivé průmyslové montáže, ocelové konstrukce a technologické celky po celé Evropě. JML mont s.r.o. - preciznost a kvalita."
   },
   "certs": {
-    "bar_title": "Certifikovaná kvalita",
-    "iso9001_title": "ISO 9001:2015",
-    "iso9001_desc": "Management kvality",
-    "iso14001_title": "ISO 14001:2015",
-    "iso14001_desc": "Ekologický management",
-    "en1090_title": "EN 1090-2",
-    "en1090_desc": "Ocelové konstrukce EXC2"
-  }
+  "quality_title": "Management kvality",
+  "quality_code": "ČSN EN ISO 9001:2016",
+  "eco_title": "Ekologie a prostředí",
+  "eco_code": "ČSN EN ISO 14001:2016",
+  "safety_title": "Bezpečnost práce",
+  "safety_code": "ČSN EN ISO 45001:2018",
+  "steel_title": "Ocelové konstrukce",
+  "steel_code": "ČSN EN 1090-2 + A1"
+}
 }
