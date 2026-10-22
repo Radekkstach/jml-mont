@@ -36,9 +36,12 @@ const Contact = () => {
     setStatusMessage(null);
 
     const formData = new FormData(e.target);
+    formData.append("_subject", "Nová zpráva z webu JML mont");
+    formData.append("_template", "box");
 
     try {
-      const response = await fetch("/api/contact/", {
+      // Zprávu doručí FormSubmit rovnou na info@jmlmont.eu (bez vlastního mailserveru a hesel)
+      const response = await fetch("https://formsubmit.co/ajax/info@jmlmont.eu", {
         method: "POST",
         body: formData,
         headers: {
@@ -46,7 +49,9 @@ const Contact = () => {
         },
       });
 
-      if (response.ok) {
+      const result = await response.json().catch(() => ({}));
+
+      if (response.ok && String(result.success) === "true") {
         setStatusMessage({
           type: "success",
           text: t(
@@ -229,7 +234,7 @@ const Contact = () => {
               {/* HONEYPOT (proti spamu) */}
               <input
                 type="text"
-                name="hp-check"
+                name="_honey"
                 className="hidden"
                 tabIndex="-1"
                 autoComplete="off"

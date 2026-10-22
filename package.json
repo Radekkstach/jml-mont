@@ -13,7 +13,6 @@
     "@gsap/react": "^2.1.2",
     "gsap": "^3.14.2",
     "i18next": "^25.10.2",
-    "nodemailer": "^10.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-i18next": "^16.6.0"
