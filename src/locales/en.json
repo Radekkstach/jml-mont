@@ -49,13 +49,15 @@
     "email_title": "Email us",
     "email": "info@jmlmont.eu",
     "form_name": "Your Name",
+    "form_name_placeholder": "Full name",
     "form_email": "Your Email",
+    "form_email_placeholder": "you@company.com",
     "form_message": "Message",
-    "form_message_placeholder": "Hello, I am interested in...",
+    "form_message_placeholder": "What needs to be installed, where and when? E.g. a racking system in a warehouse near Vienna, March 2027.",
     "form_submit": "Send Message",
     "form_sending": "Sending...",
-    "msg_success": "Thank you! Your message has been sent successfully.",
-    "msg_error": "Error: Failed to send the message. Please try again."
+    "msg_success": "Thanks, we got your message. We will get back to you shortly.",
+    "msg_error": "The message could not be sent. Please try again or email us directly at info@jmlmont.eu."
   },
   "footer": {
     "rights": "All rights reserved.",
@@ -66,13 +68,13 @@
     "description": "Industrial assembly, steel structures, fire protection systems and technology installations across Europe. JML mont s.r.o., Czech Republic, ISO 9001 and EN 1090-2 certified."
   },
   "certs": {
-  "quality_title": "Quality Management",
-  "quality_code": "EN ISO 9001:2016",
-  "eco_title": "Environmental Management",
-  "eco_code": "EN ISO 14001:2016",
-  "safety_title": "Occupational Safety",
-  "safety_code": "EN ISO 45001:2018",
-  "steel_title": "Steel Structures",
-  "steel_code": "EN 1090-2 + A1"
-}
+    "quality_title": "Quality Management",
+    "quality_code": "EN ISO 9001:2016",
+    "eco_title": "Environmental Management",
+    "eco_code": "EN ISO 14001:2016",
+    "safety_title": "Occupational Safety",
+    "safety_code": "EN ISO 45001:2018",
+    "steel_title": "Steel Structures",
+    "steel_code": "EN 1090-2 + A1"
+  }
 }

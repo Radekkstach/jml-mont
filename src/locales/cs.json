@@ -23,8 +23,7 @@
     "stat2_val": "EU",
     "stat2_title": "Působnost",
     "stat2_desc": "Montujeme po celé Evropě, od Třebíče až za hranice."
-  }
-  ,
+  },
   "references": {
     "ref1_title": "Ukázka svařování",
     "ref1_desc": "Precizní svary na ocelových konstrukcích s maximální přesností.",
@@ -50,13 +49,15 @@
     "email_title": "Napište nám",
     "email": "info@jmlmont.eu",
     "form_name": "Vaše jméno",
+    "form_name_placeholder": "Jméno a příjmení",
     "form_email": "Váš e-mail",
+    "form_email_placeholder": "vas@email.cz",
     "form_message": "Zpráva",
-    "form_message_placeholder": "Dobrý den, měl bych zájem o...",
+    "form_message_placeholder": "Co potřebujete smontovat, kde a kdy? Např. regálový systém ve skladu u Brna, březen 2027.",
     "form_submit": "Odeslat zprávu",
     "form_sending": "Odesílám...",
-    "msg_success": "Děkujeme! Vaše zpráva byla úspěšně odeslána.",
-    "msg_error": "Chyba: Zprávu se nepodařilo odeslat. Zkuste to prosím znovu."
+    "msg_success": "Díky, zprávu máme. Ozveme se vám co nejdřív.",
+    "msg_error": "Zprávu se nepodařilo odeslat. Zkuste to prosím znovu, nebo napište přímo na info@jmlmont.eu."
   },
   "footer": {
     "rights": "Všechna práva vyhrazena.",
@@ -67,13 +68,13 @@
     "description": "Průmyslové montáže, ocelové konstrukce, hasicí systémy a technologické celky po celé Evropě. JML mont s.r.o. z Třebíče, certifikace ISO 9001 a EN 1090-2."
   },
   "certs": {
-  "quality_title": "Management kvality",
-  "quality_code": "ČSN EN ISO 9001:2016",
-  "eco_title": "Ekologie a prostředí",
-  "eco_code": "ČSN EN ISO 14001:2016",
-  "safety_title": "Bezpečnost práce",
-  "safety_code": "ČSN EN ISO 45001:2018",
-  "steel_title": "Ocelové konstrukce",
-  "steel_code": "ČSN EN 1090-2 + A1"
-}
+    "quality_title": "Management kvality",
+    "quality_code": "ČSN EN ISO 9001:2016",
+    "eco_title": "Ekologie a prostředí",
+    "eco_code": "ČSN EN ISO 14001:2016",
+    "safety_title": "Bezpečnost práce",
+    "safety_code": "ČSN EN ISO 45001:2018",
+    "steel_title": "Ocelové konstrukce",
+    "steel_code": "ČSN EN 1090-2 + A1"
+  }
 }

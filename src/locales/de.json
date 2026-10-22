@@ -49,13 +49,15 @@
     "email_title": "Schreiben Sie uns",
     "email": "info@jmlmont.eu",
     "form_name": "Ihr Name",
+    "form_name_placeholder": "Vor- und Nachname",
     "form_email": "Ihre E-Mail",
+    "form_email_placeholder": "ihre@firma.de",
     "form_message": "Nachricht",
-    "form_message_placeholder": "Guten Tag, ich interessiere mich für...",
+    "form_message_placeholder": "Was soll montiert werden, wo und wann? Z. B. ein Regalsystem in einem Lager bei Wien, März 2027.",
     "form_submit": "Nachricht senden",
     "form_sending": "Wird gesendet...",
-    "msg_success": "Danke! Ihre Nachricht wurde erfolgreich gesendet.",
-    "msg_error": "Fehler: Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    "msg_success": "Danke, Ihre Nachricht ist angekommen. Wir melden uns so bald wie möglich.",
+    "msg_error": "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an info@jmlmont.eu."
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
@@ -66,13 +68,13 @@
     "description": "Industriemontage, Stahlbau, Brandschutzsysteme und technische Anlagen in ganz Europa. JML mont s.r.o. aus Tschechien, zertifiziert nach ISO 9001 und EN 1090-2."
   },
   "certs": {
-  "quality_title": "Qualitätsmanagement",
-  "quality_code": "EN ISO 9001:2016",
-  "eco_title": "Umweltmanagement",
-  "eco_code": "EN ISO 14001:2016",
-  "safety_title": "Arbeitssicherheit",
-  "safety_code": "EN ISO 45001:2018",
-  "steel_title": "Stahltragwerke",
-  "steel_code": "EN 1090-2 + A1"
-}
+    "quality_title": "Qualitätsmanagement",
+    "quality_code": "EN ISO 9001:2016",
+    "eco_title": "Umweltmanagement",
+    "eco_code": "EN ISO 14001:2016",
+    "safety_title": "Arbeitssicherheit",
+    "safety_code": "EN ISO 45001:2018",
+    "steel_title": "Stahltragwerke",
+    "steel_code": "EN 1090-2 + A1"
+  }
 }

@@ -190,7 +190,7 @@ const Contact = () => {
                   type="text"
                   required
                   className="w-full p-4 bg-white/5 border border-white/10 rounded-md text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 focus:bg-white/10 transition-colors"
-                  placeholder="Jan Novák"
+                  placeholder={t("contact.form_name_placeholder")}
                 />
               </div>
 
@@ -207,7 +207,7 @@ const Contact = () => {
                   type="email"
                   required
                   className="w-full p-4 bg-white/5 border border-white/10 rounded-md text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 focus:bg-white/10 transition-colors"
-                  placeholder="jan@email.cz"
+                  placeholder={t("contact.form_email_placeholder")}
                 />
               </div>
 
@@ -226,7 +226,7 @@ const Contact = () => {
                   className="w-full p-4 bg-white/5 border border-white/10 rounded-md text-white placeholder-gray-600 focus:outline-none focus:border-yellow-500 focus:bg-white/10 transition-colors resize-none"
                   placeholder={t(
                     "contact.form_message_placeholder",
-                    "Dobrý den, měl bych zájem o...",
+                    "Co potřebujete smontovat, kde a kdy?",
                   )}
                 ></textarea>
               </div>
