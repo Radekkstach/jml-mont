@@ -1,13 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import myLogo from "../assets/logo2.svg"; // Importuj své logo z assets
-
-// IMPORT TVÉHO LOGA ZDE (nebo použij cestu do složky public)
-// import myLogo from '../assets/mylogo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <footer className="bg-[#0a0a0a] py-8 border-t border-white/5 font-sans">
@@ -29,27 +25,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* PRAVÁ STRANA: Tvoje vizitka (STCH STUDIO) */}
-        <div className="flex items-center gap-4">
-          <span className="text-gray-500 text-[10px] uppercase tracking-[0.2em]">
-            {t("footer.designed", "Designed & Developed by")}
-          </span>
-          <a
-            href="https://stchstudio.cz/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center transition-all"
-            title="STCH Studio"
-          >
-            <img
-              src={myLogo}
-              alt="STCH Studio"
-              loading="lazy"
-              // Přidal jsem lehký scale efekt při hoveru, ať to působí interaktivněji
-              className="h-6 w-auto opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-            />
-          </a>
-        </div>
+        {/* PRAVÁ STRANA: podpis STCH Studia (web komponenta z public/stch-signature.js,
+            při změně podpisu jen znovu zkopírovat z nastroje/stch-podpis) */}
+        <stch-signature lang={i18n.language} class="text-gray-400"></stch-signature>
       </div>
     </footer>
   );
