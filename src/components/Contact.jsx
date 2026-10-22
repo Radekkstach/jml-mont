@@ -38,7 +38,7 @@ const Contact = () => {
     const formData = new FormData(e.target);
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/contact/", {
         method: "POST",
         body: formData,
         headers: {
