@@ -56,7 +56,10 @@ const Hero = () => {
       <div className="absolute inset-0 w-full h-[120%] -top-[10%] overflow-hidden">
         <img
           ref={imageRef}
-          src="/regal4.jpg"
+          src="/regal4.webp"
+          width="1920"
+          height="2560"
+          fetchPriority="high"
           alt="Průmyslová hala a ocelové konstrukce JML mont"
           className="w-full h-full object-cover opacity-60"
         />

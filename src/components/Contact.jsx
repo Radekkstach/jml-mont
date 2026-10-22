@@ -61,7 +61,7 @@ const Contact = () => {
           text: t("contact.msg_error", "Chyba: Zprávu se nepodařilo odeslat."),
         });
       }
-    } catch (error) {
+    } catch {
       setStatusMessage({
         type: "error",
         text: t("contact.msg_error", "Chyba: Zprávu se nepodařilo odeslat."),
@@ -83,9 +83,9 @@ const Contact = () => {
           {/* LEVÝ SLOUPEC - Texty a fyzické kontakty */}
           <div className="space-y-10">
             <div>
-              <h3 className="contact-element text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-6">
+              <h2 className="contact-element text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-6">
                 {t("contact.title", "Kontaktujte nás")}
-              </h3>
+              </h2>
               <div className="contact-element w-16 h-1 bg-yellow-500 rounded-full mb-6"></div>
               <p className="contact-element text-lg text-gray-400 font-light max-w-md leading-relaxed">
                 {t(
@@ -97,7 +97,8 @@ const Contact = () => {
 
             {/* Fyzické kontakty */}
             <div className="contact-element space-y-6 pt-4">
-              {/* Telefon */}
+              {/* Telefon (zobrazí se, až bude v překladech vyplněný) */}
+              {t("contact.phone") && (
               <div className="flex items-start gap-5">
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                   <svg
@@ -119,13 +120,14 @@ const Contact = () => {
                     {t("contact.phone_title", "Zavolejte nám")}
                   </h4>
                   <a
-                    href="tel:+420123456789"
+                    href={`tel:${t("contact.phone").replace(/\s/g, "")}`}
                     className="text-xl text-gray-200 hover:text-yellow-500 transition-colors"
                   >
-                    {t("contact.phone", "+420 123 456 789")}
+                    {t("contact.phone")}
                   </a>
                 </div>
               </div>
+              )}
 
               {/* Email */}
               <div className="flex items-start gap-5">

@@ -8,19 +8,19 @@ gsap.registerPlugin(ScrollTrigger);
 const slideData = [
   {
     id: 1,
-    image: "/svarec1.jpg",
+    image: "/svarec1.webp",
     titleKey: "references.ref1_title",
     descKey: "references.ref1_desc",
   },
   {
     id: 2,
-    image: "/regal33.jpg",
+    image: "/regal33.webp",
     titleKey: "references.ref2_title",
     descKey: "references.ref2_desc",
   },
   {
     id: 3,
-    image: "/lezec33.jpg",
+    image: "/lezec33.webp",
     titleKey: "references.ref3_title",
     descKey: "references.ref3_desc",
   },
@@ -96,6 +96,10 @@ const References = () => {
           {/* Obrázek s efektem pomalého přiblížení (Přidáno will-change-transform pro super plynulost) */}
           <img
             src={slide.image}
+            width="1600"
+            height="1540"
+            loading="lazy"
+            decoding="async"
             alt={t(slide.titleKey)}
             className={`w-full h-full object-cover transition-transform duration-[8000ms] ease-out will-change-transform ${
               index === current ? "scale-110" : "scale-100"

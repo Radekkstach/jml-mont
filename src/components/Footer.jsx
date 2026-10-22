@@ -18,6 +18,7 @@ const Footer = () => {
           <img
             src="/logo1.png"
             alt="JML mont"
+            loading="lazy"
             className="h-8 md:h-10 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
           />
 
@@ -42,7 +43,8 @@ const Footer = () => {
           >
             <img
               src={myLogo}
-              alt="Radek Stach"
+              alt="STCH Studio"
+              loading="lazy"
               // Přidal jsem lehký scale efekt při hoveru, ať to působí interaktivněji
               className="h-6 w-auto opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
             />

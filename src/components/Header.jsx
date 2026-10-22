@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { LANGS, langPath } from "../i18n";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -18,11 +19,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    setMobileMenuOpen(false);
-  };
-
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -35,7 +31,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* LOGO */}
           <div className="flex items-center cursor-pointer z-50 relative">
-            <a href="#">
+            <a href={langPath(currentLang)}>
               <img
                 src="/logo1.png"
                 alt="JML mont logo"
@@ -74,10 +70,12 @@ const Header = () => {
             <div
               className={`flex items-center space-x-3 pl-6 border-l ${scrolled ? "border-gray-300" : "border-gray-600"}`}
             >
-              {["cs", "en", "de"].map((lng) => (
-                <button
+              {LANGS.map((lng) => (
+                <a
                   key={lng}
-                  onClick={() => changeLanguage(lng)}
+                  href={langPath(lng)}
+                  hrefLang={lng}
+                  lang={lng}
                   className={`text-sm font-bold uppercase tracking-wider transition-colors duration-200 ${
                     currentLang === lng
                       ? "text-yellow-500"
@@ -87,7 +85,7 @@ const Header = () => {
                   }`}
                 >
                   {lng}
-                </button>
+                </a>
               ))}
             </div>
           </div>
@@ -96,6 +94,8 @@ const Header = () => {
           <div className="md:hidden z-50 relative flex items-center gap-4">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Menu"
+              aria-expanded={mobileMenuOpen}
               className={`${scrolled ? "text-gray-800" : "text-gray-200"} hover:text-yellow-500 transition-colors focus:outline-none`}
             >
               <svg
@@ -157,16 +157,18 @@ const Header = () => {
           </a>
 
           <div className="flex space-x-6 pt-6 border-t border-gray-200 w-full justify-center">
-            {["cs", "en", "de"].map((lng) => (
-              <button
+            {LANGS.map((lng) => (
+              <a
                 key={lng}
-                onClick={() => changeLanguage(lng)}
+                href={langPath(lng)}
+                hrefLang={lng}
+                lang={lng}
                 className={`text-lg font-bold uppercase tracking-wider ${
                   currentLang === lng ? "text-yellow-500" : "text-gray-500"
                 }`}
               >
                 {lng}
-              </button>
+              </a>
             ))}
           </div>
         </div>

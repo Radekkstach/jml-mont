@@ -6,8 +6,16 @@ import "./index.css";
 // Import i18n (Tohle je důležité přidat!)
 import "./i18n";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = document.getElementById("root");
+const app = (
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
+
+// Na produkci je HTML předrenderované (scripts/prerender.js), v dev režimu je root prázdný
+if (root.hasChildNodes()) {
+  ReactDOM.hydrateRoot(root, app);
+} else {
+  ReactDOM.createRoot(root).render(app);
+}

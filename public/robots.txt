@@ -1,0 +1,6 @@
+# Web je veřejný a smí ho číst vyhledávače i AI asistenti (ChatGPT, Claude, Perplexity, Gemini…)
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://jmlmont.eu/sitemap.xml

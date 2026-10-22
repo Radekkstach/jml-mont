@@ -45,7 +45,7 @@
     "title": "Contact Us",
     "desc": "If you are looking for an assembly company that keeps its word and works hard, get in touch – we'd love to hear from you.",
     "phone_title": "Call us",
-    "phone": "+420 123 456 789",
+    "phone": "",
     "email_title": "Email us",
     "email": "info@jmlmont.eu",
     "form_name": "Your Name",
@@ -63,7 +63,7 @@
   },
   "seo": {
     "title": "JML mont | Industrial Assembly and Steel Structures",
-    "description": "Reliable industrial assembly, steel structures, and technological units across Europe. JML mont s.r.o. - precision and quality."
+    "description": "Industrial assembly, steel structures, fire protection systems and technology installations across Europe. JML mont s.r.o., Czech Republic, ISO 9001 and EN 1090-2 certified."
   },
   "certs": {
   "quality_title": "Quality Management",

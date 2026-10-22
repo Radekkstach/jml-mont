@@ -45,7 +45,7 @@
     "title": "Kontaktieren Sie uns",
     "desc": "Wenn Sie ein Montageunternehmen suchen, das sein Wort hält und hart arbeitet, melden Sie sich – wir freuen uns auf Sie.",
     "phone_title": "Rufen Sie uns an",
-    "phone": "+420 123 456 789",
+    "phone": "",
     "email_title": "Schreiben Sie uns",
     "email": "info@jmlmont.eu",
     "form_name": "Ihr Name",
@@ -63,7 +63,7 @@
   },
   "seo": {
     "title": "JML mont | Industriemontage und Stahlbau",
-    "description": "Zuverlässige Industriemontage, Stahlbau und technologische Anlagen europaweit. JML mont s.r.o. - Präzision und Qualität."
+    "description": "Industriemontage, Stahlbau, Brandschutzsysteme und technische Anlagen in ganz Europa. JML mont s.r.o. aus Tschechien, zertifiziert nach ISO 9001 und EN 1090-2."
   },
   "certs": {
   "quality_title": "Qualitätsmanagement",
